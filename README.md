@@ -52,7 +52,7 @@ This project focuses on building and configuring a dedicated, secure virtual lab
 * **What was done:** Created a custom global NAT Network named **`NatNetwork`** in VirtualBox with the IPv4 Prefix set to `10.0.0.0/24` and enabled DHCP.
 * **Why it was done:** A NAT Network creates an isolated internal network segment for virtual machines to communicate while still providing outbound internet access through the host interface.
 
-![VirtualBox NAT Network Configuration](1.2.png)
+![VirtualBox NAT Network Configuration](2-NAT-Network-settings-screenshot.png)
 
 ---
 
@@ -60,7 +60,7 @@ This project focuses on building and configuring a dedicated, secure virtual lab
 * **What was done:** Downloaded the Kali Linux VirtualBox image (`.vbox`/`.vdi`), imported it into VirtualBox, renamed the virtual machine to **`Kali Linux Virtual Lab`**, and mapped its network adapter to `Adapter 1: Intel PRO/1000 MT Desktop (NAT Network, 'NatNetwork')`.
 * **Why it was done:** Kali Linux serves as the primary offensive security workstation containing pre-installed penetration testing tools. Attachments to `NatNetwork` ensure it lands on the `10.0.0.0/24` subnet.
 
-![Kali Linux Virtual Machine Properties](1.1.png)
+![Kali Linux Virtual Machine Properties](1-VirtualBox-VM-overview-screenshot.png)
 
 ---
 
@@ -68,7 +68,7 @@ This project focuses on building and configuring a dedicated, secure virtual lab
 * **What was done:** Booted up the Kali Linux Virtual Machine and verified access to the Graphical User Interface (XFCE Desktop).
 * **Why it was done:** Confirms that the virtual machine image imported correctly without kernel panic or display driver errors.
 
-![Kali Linux Desktop Interface](1.3.jpg)
+![Kali Linux Desktop Interface](3-kali-linux-desktop-screenshot.png)
 
 ---
 
@@ -80,7 +80,7 @@ This project focuses on building and configuring a dedicated, secure virtual lab
   * **DNS:** `8.8.8.8`
 * **Why it was done:** Assigning a static IP ensures consistent addressing across lab restart cycles, critical for logging, local routing, and targeted lab scenarios.
 
-![Kali Linux IPv4 Address Configuration](2.png)
+![Kali Linux IPv4 Address Configuration](4-IPv4-manual-address-settings-screenshot.png)
 
 ---
 
@@ -88,7 +88,7 @@ This project focuses on building and configuring a dedicated, secure virtual lab
 * **What was done:** Executed `sudo ifconfig eth0 down` followed by `sudo ifconfig eth0 up` in the terminal to apply the new IP configuration, then verified with `ifconfig`.
 * **Why it was done:** Restarting the network interface forces the OS to re-bind the network socket to the manually defined `10.0.0.2` address.
 
-![Interface Reset and ifconfig Verification](3.png)
+![Interface Reset and ifconfig Verification](5-terminal-ifconfig-down-up-screenshot.png)
 
 ---
 
@@ -102,7 +102,7 @@ To confirm the network configuration and internet connectivity, the following te
 
 > **Result:** All packets were transmitted and received successfully with **0% packet loss**, confirming both internal routing and external reachability.
 
-![Ping Verification Tests](4.png)
+![Ping Verification Tests](5-terminal-ifconfig-down-up-screenshot.png)
 
 ---
 
@@ -143,6 +143,5 @@ To confirm the network configuration and internet connectivity, the following te
 
 ## 👤 Author Information
 
-* **Name:** [Your Full Name]
-* **Batch / Cohort:** [Your Batch / Course Name]
-* **LinkedIn:** [Your LinkedIn Profile URL](https://linkedin.com/in/your-profile)
+* **Name:** [Musab Mohamed
+* **LinkedIn:** [Your LinkedIn Profile URL](www.linkedin.com/in/musabone1)

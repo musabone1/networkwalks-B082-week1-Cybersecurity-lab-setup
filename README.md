@@ -143,5 +143,5 @@ To confirm the network configuration and internet connectivity, the following te
 
 ## 👤 Author Information
 
-* **Name:** [Musab Mohamed
-* **LinkedIn:** [Your LinkedIn Profile URL](www.linkedin.com/in/musabone1)
+* **Name:** Musab Mohamed
+* **LinkedIn:** www.linkedin.com/in/musabone1

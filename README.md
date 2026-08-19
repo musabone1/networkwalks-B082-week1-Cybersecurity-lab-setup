@@ -17,8 +17,8 @@ This project focuses on building and configuring a dedicated, secure virtual lab
 
 ## 🎯 Purpose of the Lab
 
-* **Why a Sandbox?** A sandbox prevents security tools and potentially destructive payloads from affecting the host system, local networks, or unauthorized external entities.
-* **Why an Isolated Network?** Utilizing a custom **NAT Network (`10.0.0.0/24`)** allows all lab Virtual Machines to communicate securely with each other while maintaining outbound internet access for tool updates, all while staying segmented from the host's LAN.
+* **Isolated Testing Environment: Using VirtualBox allows us to run a full penetration-testing operating system (Kali Linux) inside a dedicated virtual machine. This ensures all security tools, scans, and experiments are executed safely without risking the stability, files, or settings of the host computer.
+* **Network Segmentation: VirtualBox’s built-in NAT Network (⁠10.0.0.0/24⁠) acts as a private virtual router. It allows virtual machines to communicate with each other and access the internet for updates while keeping the entire lab completely separated from your physical local area network (LAN).
 
 ---
 

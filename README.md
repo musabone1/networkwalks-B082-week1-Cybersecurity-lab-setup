@@ -17,8 +17,9 @@ This project focuses on building and configuring a dedicated, secure virtual lab
 
 ## 🎯 Purpose of the Lab
 
-* **Isolated Testing Environment: Using VirtualBox allows us to run a full penetration-testing operating system (Kali Linux) inside a dedicated virtual machine. This ensures all security tools, scans, and experiments are executed safely without risking the stability, files, or settings of the host computer.
-* **Network Segmentation: VirtualBox’s built-in NAT Network (⁠10.0.0.0/24⁠) acts as a private virtual router. It allows virtual machines to communicate with each other and access the internet for updates while keeping the entire lab completely separated from your physical local area network (LAN).
+* **Why VirtualBox?** VirtualBox operates as a Type-2 hypervisor, allowing us to deploy and test security operating systems like Kali Linux inside fully isolated virtual machines. This guarantees that penetration testing tools, network scans, and experimental configurations remain safely contained without endangering the host operating system or system files.
+* **Why an Isolated Virtual Network?** Configuring VirtualBox's built-in **NAT Network (`10.0.0.0/24`)** creates a private virtual router within the hypervisor. This allows lab Virtual Machines to communicate securely with each other and reach the internet for updates while keeping the entire environment segmented from the physical local area network (LAN).
+* **Snapshot & Rollback Control:** VirtualBox provides snapshot functionality, allowing you to save a clean base state of your environment. If a service breaks or system files are corrupted during testing, the virtual machine can be restored to a known-good state instantly.
 
 ---
 

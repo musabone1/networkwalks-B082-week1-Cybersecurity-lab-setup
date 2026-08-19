@@ -26,7 +26,7 @@ This project focuses on building and configuring a dedicated, secure virtual lab
 
 | Component | Specification / Configuration Details |
 | :--- | :--- |
-| **Host Operating System** | Windows 10/11 Pro (64-bit) |
+| **Host Operating System** | Windows 11 Pro (64-bit) |
 | **Hypervisor** | Oracle VM VirtualBox v7.0+ |
 | **Guest OS** | Kali Linux 2026.2 (64-bit) |
 | **Virtual Disk** | 80.09 GB VDI |
